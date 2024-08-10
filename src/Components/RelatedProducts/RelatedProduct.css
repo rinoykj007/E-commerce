@@ -1,0 +1,36 @@
+.relatedProducts {
+  max-width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.relatedProduct-items {
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  gap: 16px;
+
+  box-sizing: border-box;
+}
+.items {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: smaller;
+}
+
+@media (max-width: 1024px) {
+  .relatedProduct-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .relatedProduct-items {
+    grid-template-columns: 1fr;
+  }
+}
+.relatedProduct-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

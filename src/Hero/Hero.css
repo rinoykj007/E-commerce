@@ -1,0 +1,127 @@
+:root {
+  font-size: 16px;
+}
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 180px;
+  line-height: 1.1;
+}
+.hero-left he {
+  color: #090909;
+  font-size: 26px;
+  font-weight: 600;
+}
+.hero-left p {
+  color: #171717;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .hero-left p {
+    font-size: 3.75rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-left p {
+    font-size: 3.125rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-left p {
+    font-size: 2.5rem;
+  }
+  .hero-image {
+    width: 16rem;
+  }
+  .hero-left {
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-left p {
+    font-size: 1.875rem;
+  }
+}
+.hand-hand-icon {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.hero-hand-icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.hero-hand-icon {
+  width: 105px;
+}
+.hero-latest-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9375rem;
+  width: 19.375rem;
+  height: 4.375rem;
+  border-radius: 4.6875rem;
+  margin-top: 1.875rem;
+  background: #ff4141;
+  color: wheat;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1200px) {
+  .hero-latest-btn {
+    width: 15.625rem;
+    height: 3.75rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-latest-btn {
+    width: 12.5rem;
+    height: 3.125rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-latest-btn {
+    width: 11.25rem;
+    height: 2.8125rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-latest-btn {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 0.7rem;
+  }
+}
+.hero-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+}

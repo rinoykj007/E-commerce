@@ -1,0 +1,131 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+}
+
+.nav-log {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-log p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #171717;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 50px;
+  font-size: 20px;
+  color: #626262;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+.nav-menu {
+  padding-left: 0px;
+}
+
+.nav-menu li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-login-cart button {
+  cursor: pointer;
+  width: 100px;
+  height: 38px;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 75px;
+  color: #515151;
+  background-color: white;
+  border: 1px solid #7a7a7a;
+}
+
+.nav-login-cart button:active {
+  background: #f3f3f3;
+}
+
+.nav-cart-count {
+  width: 22px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -35px;
+  margin-left: -47px;
+  border-radius: 11px;
+  font-size: 14px;
+  background: red;
+  color: white;
+}
+
+.nav-menu hr {
+  border: none;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background: #ff4141;
+  transition: 0.3s linear;
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none; /* Hide the menu on smaller screens */
+    flex-direction: column; /* Stack menu items vertically */
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.active {
+    display: flex; /* Show menu when active */
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block; /* Show menu toggle button */
+    cursor: pointer;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none; /* Hide menu toggle button on larger screens */
+  }
+}

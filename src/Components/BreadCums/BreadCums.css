@@ -1,0 +1,6 @@
+.breadcrum {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  font-size: 10px;
+}

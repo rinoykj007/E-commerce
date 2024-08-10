@@ -1,0 +1,52 @@
+.shopCategory_banner {
+  width: 80%;
+  display: block;
+  margin: 35px auto;
+}
+.shopCategory-product {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.shopeCategory-indexSort {
+  display: flex;
+  margin: 0px 160px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.shopeCategory-short {
+  padding: 0.5rem 1rem;
+  border-radius: 40px;
+  border: 1px solid #888;
+}
+.shopeCategory-indexSort p span {
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .shopeCategory-indexSort {
+    margin: 0px;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+.shopCategory-lodeMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0rem;
+}
+.shopCategory-lodeMore p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 69px;
+  border-radius: 75px;
+  background-color: #ededed;
+  color: #787878;
+  font-size: 18px;
+  font-weight: 500;
+  width: 35%;
+}
